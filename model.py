@@ -227,7 +227,7 @@ def train(train_loader, valid_loader, net, head_names, lr, num_epochs, weight_de
     else:
         optimizer = torch.optim.Adam(net.parameters(), lr=lr, weight_decay=weight_decay)
 
-    # 数据并行，准备将小批量划分到各个GPU中并行训练，反向传播后自动将各GPU中的梯度相加并分发
+    # 数据并行，准备将小批量划分到各个GPU中并行训练，反向传播后自动将各GPU中的梯度相加并算均值
     net = nn.DataParallel(net, device_ids=devices)
 
     # cosine退火学习率，共num_epochs个迭代步数，每个周期更新一次，从余弦的峰顶降到谷底，最低学习率为1e-6
