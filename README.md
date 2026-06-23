@@ -1,6 +1,6 @@
 # Classify-Leaves-d2l-kaggle
 
-叶子图片分类，沐神课程中的第二次竞赛，kaggle地址：[Classify Leaves | Kaggle](https://www.kaggle.com/competitions/classify-leaves)
+叶子图片分类实验，这是沐神课程中的第二次竞赛，kaggle地址：[Classify Leaves | Kaggle](https://www.kaggle.com/competitions/classify-leaves)
 
 ## 主要工作
 
